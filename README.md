@@ -1,6 +1,6 @@
 <h1>VintaSoft .NET Core Barcode Generator Console Demo</h1>
 
-This .NET Core 2 console demo application shows how to generate barcodes images. Demo uses functionality of <a href="http://www.vintasoft.com/vsbarcode-dotnet-index.html">VintaSoft Barcode .NET SDK</a>. Source codes for C# and VB.NET are available.
+This .NET Core 2 console demo application shows how to generate barcode image. Demo uses functionality of <a href="http://www.vintasoft.com/vsbarcode-dotnet-index.html">VintaSoft Barcode .NET SDK</a>. Source codes for C# and VB.NET are available.
 
 
 <h2>Download</h2>
