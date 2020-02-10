@@ -1,4 +1,4 @@
-<h1>VintaSoft .NET Core Barcode Generator Console Demo</h1>
+<h1>VintaSoft Barcode Generator Console Demo</h1>
 
 This demo shows how to <strong>generate barcode image</strong> in <strong>.NET Core application</strong> for <strong>Windows</strong>, <strong>Linux</strong> and <strong>macOS</strong>. Demo uses functionality of Vintasoft.Barcode.dll - 100% managed .NET Core assembly from <a href="https://www.vintasoft.com/vsbarcode-dotnet-index.html">VintaSoft Barcode .NET SDK</a>. Source codes for C# and VB.NET are available.
 
