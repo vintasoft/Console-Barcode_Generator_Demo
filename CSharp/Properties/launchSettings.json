@@ -1,8 +1,0 @@
-{
-  "profiles": {
-    "BarcodeGeneratorConsoleDemo": {
-      "commandName": "Project",
-      "commandLineArgs": "test.png Code128 1234567890"
-    }
-  }
-}

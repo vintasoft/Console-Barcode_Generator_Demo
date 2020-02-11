@@ -8,6 +8,8 @@ namespace BarcodeGeneratorConsoleDemo
     {
         static void Main(string[] args)
         {
+            VintasoftBarcode.VintasoftBarcodeLicense.Register();
+
             try
             {
                 if (args.Length != 3)
@@ -17,18 +19,19 @@ namespace BarcodeGeneratorConsoleDemo
                 }
                 try
                 {
+                    string fileName = args[0];
+                    string barcodeType = args[1];
+                    string barcodeValue = args[2];
+
+#if NETCOREAPP3_0
                     // register custom encodings for QR and HanXin Code barcodes 
                     // (System.Text.Encoding.CodePages package)
                     System.Text.Encoding.RegisterProvider(System.Text.CodePagesEncodingProvider.Instance);
-
+#endif
 
                     // create barcode writer
                     BarcodeWriter writer = new BarcodeWriter();
                     writer.Settings.PixelFormat = BarcodeImagePixelFormat.Bgr24;
-
-                    string fileName = args[0];
-                    string barcodeType = args[1];
-                    string barcodeValue = args[2];
 
                     // set type of generating barcode
                     SetBarcodeType(writer.Settings, barcodeType);
@@ -36,14 +39,10 @@ namespace BarcodeGeneratorConsoleDemo
                     // specify barcode value
                     writer.Settings.Value = barcodeValue;
 
-                    // generate barcode as image
-                    using (Bitmap bitmap = writer.GetBarcodeAsBitmap())
-                    {
-                        // save barcode image
-                        bitmap.Save(fileName);
+                    // generate barcode as PNG file
+                    writer.SaveBarcodeAsImage(fileName, BarcodeImageFormat.Png);
 
-                        Console.WriteLine(string.Format("File '{0}' is created.", fileName));
-                    }
+                    Console.WriteLine(string.Format("File '{0}' is created.", fileName));
                 }
                 catch (Exception ex)
                 {
@@ -52,7 +51,7 @@ namespace BarcodeGeneratorConsoleDemo
             }
             finally
             {
-                Console.WriteLine("Read any key...");
+                Console.WriteLine("Press any key...");
                 Console.ReadKey();
             }
         }
