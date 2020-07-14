@@ -23,7 +23,7 @@ namespace BarcodeGeneratorConsoleDemo
                     string barcodeType = args[1];
                     string barcodeValue = args[2];
 
-#if NETCOREAPP3_0
+#if NETCORE
                     // register custom encodings for QR and HanXin Code barcodes 
                     // (System.Text.Encoding.CodePages package)
                     System.Text.Encoding.RegisterProvider(System.Text.CodePagesEncodingProvider.Instance);
@@ -91,6 +91,9 @@ namespace BarcodeGeneratorConsoleDemo
                     break;
                 case "DataMatrix":
                     settings.Barcode = BarcodeType.DataMatrix;
+                    break;
+                case "DotCode":
+                    settings.Barcode = BarcodeType.DotCode;
                     break;
                 case "DutchKIX":
                     settings.Barcode = BarcodeType.DutchKIX;
