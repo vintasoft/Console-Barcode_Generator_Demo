@@ -8,8 +8,6 @@ namespace BarcodeGeneratorConsoleDemo
     {
         static void Main(string[] args)
         {
-            VintasoftBarcode.VintasoftBarcodeLicense.Register();
-
             try
             {
                 if (args.Length != 3)
