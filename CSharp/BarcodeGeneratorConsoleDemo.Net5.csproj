@@ -13,12 +13,12 @@
     <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
     <GenerateAssemblyTitleAttribute>false</GenerateAssemblyTitleAttribute>    
 
-    <Version>12.2.2.1</Version>
+    <Version>12.2.3.1</Version>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="System.Drawing.Common" Version="5.0.0-preview.6.20305.6" />
     <PackageReference Include="System.Text.Encoding.CodePages" Version="5.0.0-preview.6.20305.6" />
-    <PackageReference Include="Vintasoft.Barcode" Version="12.2.2.1" />
+    <PackageReference Include="Vintasoft.Barcode" Version="12.2.3.1" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Program.cs" />
