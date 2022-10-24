@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>net6.0</TargetFramework>
+    <TargetFramework>net7.0</TargetFramework>
 
     <EnableDefaultItems>false</EnableDefaultItems>
 
@@ -24,7 +24,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="System.Text.Encoding.CodePages" Version="6.0.0" />
+    <PackageReference Include="System.Text.Encoding.CodePages" Version="7.0.0-rc.1.22426.10" />
     <PackageReference Include="Vintasoft.Barcode" Version="14.0.0.1" />
     <PackageReference Include="Vintasoft.Barcode.SkiaSharp" Version="14.0.0.1" />
     <PackageReference Include="Vintasoft.Shared" Version="3.3.0.1" />

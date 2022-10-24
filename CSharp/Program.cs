@@ -1,5 +1,5 @@
 ﻿using System;
-using System.Drawing;
+
 using Vintasoft.Barcode;
 
 namespace BarcodeGeneratorConsoleDemo
@@ -22,9 +22,15 @@ namespace BarcodeGeneratorConsoleDemo
                     string barcodeValue = args[2];
 
 #if NETCORE
+                    // initialize Vintasoft.Barcode.SkiaSharp Assembly
+                    Vintasoft.Barcode.SkiaSharpAssembly.Init();
+
                     // register custom encodings for QR and HanXin Code barcodes 
                     // (System.Text.Encoding.CodePages package)
                     System.Text.Encoding.RegisterProvider(System.Text.CodePagesEncodingProvider.Instance);
+#else
+                    // initialize Vintasoft.Barcode.Gdi Assembly
+                    Vintasoft.Barcode.GdiAssembly.Init();
 #endif
 
                     // create barcode writer
@@ -38,7 +44,7 @@ namespace BarcodeGeneratorConsoleDemo
                     writer.Settings.Value = barcodeValue;
 
                     // generate barcode as PNG file
-                    writer.SaveBarcodeAsImage(fileName, BarcodeImageFormat.Png);
+                    writer.SaveBarcodeAsImage(fileName);
 
                     Console.WriteLine(string.Format("File '{0}' is created.", fileName));
                 }
