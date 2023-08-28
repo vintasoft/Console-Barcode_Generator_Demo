@@ -1,15 +1,27 @@
-<h1>VintaSoft Barcode Generator Console Demo</h1>
+# VintaSoft Barcode Generator Console Demo
 
-This demo shows how to <strong>generate barcode image</strong> in <strong>.NET application</strong> for <strong>Windows</strong>, <strong>Linux</strong> and <strong>macOS</strong>. Demo uses functionality of Vintasoft.Barcode.dll - 100% managed .NET assembly from <a href="https://www.vintasoft.com/vsbarcode-dotnet-index.html">VintaSoft Barcode .NET SDK</a>. Source codes for C# and VB.NET are available.
-
-
-<h2>Download</h2>
-VintaSoft Barcode .NET SDK distributive package can be downloaded here: https://www.vintasoft.com/download.html
+This console C# project uses <a href="https://www.vintasoft.com/vsbarcode-dotnet-index.html">VintaSoft Barcode .NET SDK</a> and demonstrates how to generate barcodes image in Windows, Linux and macOS.
 
 
-<h2>Documentation</h2>
-VintaSoft Barcode .NET SDK on-line User Guide and API Reference for .NET development is available here: https://www.vintasoft.com/docs/vsbarcode-dotnet/
+## Usage
+1. Get the 30 day free evaluation license for <a href="https://www.vintasoft.com/vsbarcode-dotnet-index.html" target="_blank">VintaSoft Barcode .NET SDK</a> as described here: <a href="https://www.vintasoft.com/docs/vsbarcode-dotnet/Licensing-Barcode-Evaluation.html" target="_blank">https://www.vintasoft.com/docs/vsbarcode-dotnet/Licensing-Barcode-Evaluation.html</a>
+
+2. Update the evaluation license in "CSharp\Program.cs" file:
+   ```
+   Vintasoft.Barcode.BarcodeGlobalSettings.Register("REG_USER", "REG_EMAIL", "EXPIRATION_DATE", "REG_CODE");
+   ```
+
+3. Build the project ("BarcodeGeneratorConsoleDemo.Net7.csproj" file) in Visual Studio or using .NET CLI:
+   ```
+   dotnet build BarcodeGeneratorConsoleDemo.Net7.csproj
+   ```
+
+4. Run compiled application and try to generate barcodes.
 
 
-<h2>Support</h2>
+## Documentation
+VintaSoft Barcode .NET SDK on-line User Guide and API Reference for .NET developer is available here: https://www.vintasoft.com/docs/vsbarcode-dotnet/
+
+
+## Support
 Please visit our <a href="https://myaccount.vintasoft.com/">online support center</a> if you have any question or problem.
