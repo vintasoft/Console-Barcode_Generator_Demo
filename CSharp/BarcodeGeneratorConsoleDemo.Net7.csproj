@@ -24,7 +24,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="System.Text.Encoding.CodePages" Version="7.0.0-rc.1.22426.10" />
+    <PackageReference Include="System.Text.Encoding.CodePages" Version="7.0.0" />
     <PackageReference Include="Vintasoft.Barcode" Version="14.1.16.1" />
     <PackageReference Include="Vintasoft.Barcode.SkiaSharp" Version="14.1.16.1" />
     <PackageReference Include="Vintasoft.Shared" Version="4.0.0.3" />
