@@ -75,6 +75,9 @@ namespace BarcodeGeneratorConsoleDemo
                 case "AustralianPost":
                     settings.Barcode = BarcodeType.AustralianPost;
                     break;
+                case "JapanPost":
+                    settings.Barcode = BarcodeType.JapanPost;
+                    break;
                 case "Aztec":
                     settings.Barcode = BarcodeType.Aztec;
                     break;
