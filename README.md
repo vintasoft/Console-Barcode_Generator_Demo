@@ -1,4 +1,4 @@
-# VintaSoft Barcode Generator Console Demo
+﻿# VintaSoft Barcode Generator Console Demo
 
 This console C# project uses <a href="https://www.vintasoft.com/vsbarcode-dotnet-index.html">VintaSoft Barcode .NET SDK</a> and demonstrates how to generate barcodes image in Windows and Linux.
 
